@@ -4,8 +4,46 @@
     max-width: 20em;
     border-radius: 0.3em;
     padding: 0.3em;
+    margin: 0.3em;
 }
 
-.Card > * {
-    margin: 0;
+.FlipOnHover:hover {
+    transform: scaleX(-1);
+}
+
+.RotateOnHover {
+    transition: transform .7s ease-in-out;
+}
+
+.RotateOnHover:hover {
+    transform: rotate(360deg);
+}
+
+/* Card Header */
+.CardHeader {
+    display: flex;
+    align-items: center;
+}
+
+.middle {
+  flex: 1;
+}
+
+.first, .last {
+  flex-shrink: 0;
+}
+
+.last {
+  display: flex;
+  align-items: center;
+  gap: 0.3em; /* optional: space between icons */
+}
+
+/* Clickable Icons */
+.Clickable {
+    cursor: pointer;
+}
+
+.Clickable:hover {
+    color: orangered;
 }
