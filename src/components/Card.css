@@ -1,10 +1,13 @@
 .Card {
     background-color: black;
     color: white;
-    max-width: 20em;
     border-radius: 0.3em;
     padding: 0.3em;
     margin: 0.3em;
+}
+
+.Ghost {
+    opacity: 0.5;
 }
 
 .FlipOnHover:hover {

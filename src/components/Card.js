@@ -7,10 +7,10 @@ import Settings from './icon/Settings.js'
 
 import Draggable from './conatiners/Draggable.js';
 
-export default function Card({title, description}) {
-  return <Draggable className="Card">
+export default function Card({number, description, ghost=false, onDragStart=e=>{}}) {
+  return <Draggable className={ghost ? "Card Ghost" : "Card"} key={number} onDragStart={onDragStart}>
     <div className='CardHeader'>
-      <span className='first'>{title}</span>
+      <span className='first'>#{number}</span>
       <div className='middle'>
       </div>
       <div className='last'>

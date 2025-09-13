@@ -1,0 +1,8 @@
+.Column {
+    background-color: blue;
+    padding: 0.3em;
+    margin: 0.3em;
+    max-width: 20em;
+    border-radius: 0.3em;
+    height: 100%;
+}

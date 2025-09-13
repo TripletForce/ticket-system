@@ -1,3 +1,23 @@
 body.drag {
   cursor: grabbing !important;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
+
+.bringForward {
+  z-index: 100;
+  /* <length> | <length> | <length> | <color> */
+  /* box-shadow: 12px 12px 2px 1px rgb(0 0 255 / 0.2); */
+}
+
+.stopHighlight {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vw;
+  z-index: 50;
+  opacity: 50;
+} 
